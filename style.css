@@ -1,0 +1,57 @@
+
+ .home {
+    height: 840px;
+    background-image: url(img/bg_hero_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+ }
+
+ .home_container{
+    padding-top: 10vh;
+
+ }
+
+ .home_header{
+    margin-top: 15vh;
+
+ }
+
+ .home_img {
+    max-height: 500px;
+    min-width: 170px;
+ }
+
+ .nav_bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px ;
+    padding-bottom: 50px;
+
+ }
+
+ .log {
+   padding-top: 0px ;
+ }
+
+ .btn-nav{
+    padding: 10px 15px 10px 15px;
+    /* padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    margin-right: 20px;
+    background-color: rgb(25, 25, 180);
+    color: white;
+    border-radius: 20px;
+
+ }
+
+ .btn-nav:hover{
+   box-shadow: 0px 2px 8px 1px wheat;
+   background-color: wheat;
+   color: blue;
+   font: bold;
+ 
+ }
