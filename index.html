@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +13,23 @@
 
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="style.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="./js/w3Include.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
     <title >khatab AL-DAGHISTANI</title>
-    <link rel="shortcut icon" href="./img/logo.gif">
+    <link rel="shortcut icon" href="./img/logo_watermark.png">
   
 </head>
+
 <body>
 
+ 
     <nav class="navbar nav_bar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           
           <a class="navbar-brand" href="#">
-              <img  src="./img/logo.gif" alt="khatab logo">
+              <img class="logo_img" src="./img/logo_watermark.png" alt="khatab logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,6 +59,7 @@
     </nav>
 
     <section class ="home">
+      <!-- <div includeMyHTML="/component/myNavPage.html"></div>   -->
         <div class="container home_container">
             <div class = "row">
                 <div class = "col">
@@ -94,26 +102,31 @@
 
       <div class="container">
         <div class="row">
-
           <div class="col-lg-6 col-md-6 col-12">
-            <form action="POST" class="contact-form webform"  role="form" name="contact" data-netlify= "true">
+            <form action="POST" class="needs-validation"   role="form" name="contact" data-netlify= "true">
                 
                 <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
+                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name" required>
 
-                    <label for="cf-name" class="webform-label">Full Name</label>
+                    <label for="cf-name" >Full Name</label>
                 </div>
 
                 <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
+                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email" required>
 
-                    <label for="cf-email" class="webform-label">Your Email</label>
+                    <label for="cf-email" >Your Email</label>
                 </div>
 
                 <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
+                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message" required></textarea>
 
-                    <label for="cf-message" class="webform-label">Message</label>
+                    <label for="cf-message">Message</label>
+                </div>
+                
+                <div class="form-group d-flex flex-column-reverse">
+                  <label class="webform-label">
+                    <input class="checkbox" type="checkbox" name="remember" required> Check this checkbox to continue.
+                  </label>
                 </div>
 
                 <button type="submit" class="submit-button"  name="submit">Send</button>
@@ -137,7 +150,7 @@
                     <li><a hhref="#" class="fa fa-youtube"></a></li>
                 </ul>
               
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2021 Kay Tech </p>
+              <p class="copyright-text">Copyright &copy; 2021 Kay Tech </p>
             </div>
 
         </div>
@@ -148,6 +161,12 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-            
+
+            <script>
+              includeHTML();
+              </script>
+              
 </body>
+
 </html>
+
