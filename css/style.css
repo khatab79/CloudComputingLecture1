@@ -1,5 +1,6 @@
 body, html {
     overflow-x: hidden;
+    font-size: 1.2rem;
 }
 
 .logo_img{
@@ -25,10 +26,10 @@ body, html {
 }
 
  #btn-nav {
-     padding-right: 15px;
-     padding-left: 15px;
-     padding-bottom: 10px;
-     padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin-right: 20px;
     background-color: rgb(25, 25, 179);
     color: white;
@@ -95,12 +96,12 @@ body, html {
 }
 .skill {
     color: white;
-    
+    margin-top: 25px;
     background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)) , url(../img/fullstack.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 #btn__skill {
     color: white;
@@ -202,3 +203,44 @@ body, html {
     color: white;
   }
  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 10px;
+    background-color: rgba(172, 23, 23, 0.87); 
+    cursor: pointer;
+    padding: 10px;
+    height: 90px;
+    width:90px;
+    border-radius: 50%;
+    border: solid 2px green;
+    z-index: 9999;
+  }
+  
+  #myBtn:hover {
+    background-color: transparent;
+    border: none;
+  }
+
+
+  #mynavbar {
+    display: none;
+    background-color:transparent;
+    position: fixed;
+    display: block;
+    transition: top 0.3s;
+    z-index: 9999;
+  }
+  
+  #mynavbar a {
+    float: left;
+    display: block;
+    color:rgb(89, 80, 165);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+ 
+  }
