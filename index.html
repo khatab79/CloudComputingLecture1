@@ -68,14 +68,20 @@
       </div>
     </nav>
     
-    <section class="home" id="home">
+  <section class="home" id="home">
       <div class="container" id="container__home">
           <div class="row">
             <div class = "col">
               <h1 class="display-4 home_header">Khatab AL-Daghistani </h1>
+                <!-- <div class ="wrapper">
+                  <h2>I am a <span></span></h2>
+                </div> -->
                 <p> Experience creating and design applications and websites. 
                 <br/>Familiar with modular, object-oriented programming and different technology 
               </p>
+              <!-- <a href="./attachement/CV_KhatabALdaghistani.pdf" download>
+                <img src="./img/logo_watermark.png" alt="khatab logo" width="104" height="142">
+              </a> -->
             </div>
               <div class="col text-center">
                 <img src="./img/home_001.jpg" class="img-fluid" id="img__home" data-animation="zoomIn" >
@@ -294,17 +300,18 @@
         <form action="POST" class="needs-validation"   role="form" name="contact" data-netlify= "true">
           <div class="mb-3">
             <label for="fullname" class="form-label">Full Name</label>
-            <input type="text" class="form-control mb-3" id="fullname" aria-describedby="namehelp" required> 
+            <input type="text" class="form-control mb-3" id="fullname" name="fullname" aria-describedby="namehelp" required> 
           </div>
             <div class="mb-3">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required> 
+              <input type="email" class="form-control" id="inputEmail"  name="inputEmail"aria-describedby="emailHelp" required> 
             </div>
               <div class="mb-3 mt-3">
                 <label for="message" class="form-label">Your Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
               </div>
-              <input type="submit" class="btn btn-ghost" id="btn__submit" value="Send">
+              <!-- <input type="submit" class="btn btn-ghost" id="btn__submit" value="Send"> -->
+              <button type="submit" class="btn btn-ghost" id="btn__submit" name="Send">Send</button>
         </form>
       </div>
      
