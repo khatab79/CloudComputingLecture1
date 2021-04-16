@@ -27,7 +27,7 @@
   
   </head>
   <body>
-
+    <div includeMyHTML ="./component/myNavPage.html"></div> 
     <nav class="navbar navbar-floating navbar-expand-lg  navbar-light"  id="mynavbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#index.html">
@@ -59,7 +59,7 @@
               <a class="nav-link" href="#contact" tabindex="-1"  >Contact</a>
             </li>
           </ul>
-          <button class="btn btn-ghost " id="btn-nav" onclick= 'window.open("./attachement/CV_KhatabALdaghistani.pdf")'>
+          <button class="btn btn-ghost " id="btn-nav" onclick= 'window.open("./attachement/CV_KhatabALdaghistani.pdf")' download>
            
               <i class="fa fa-download"></i> Download CV
   
@@ -79,7 +79,8 @@
                 <p> Experience creating and design applications and websites. 
                 <br/>Familiar with modular, object-oriented programming and different technology 
               </p>
-              <!-- <a href="./attachement/CV_KhatabALdaghistani.pdf" download>
+              <img style="max-height: 400px; min-width: 400px;"  src="./img/underConstruction.gif" alt="underConstruction">
+              <!-- <a href="./attachement/CV_KhatabALdaghistani.pdf"  download="CV_KhatabALdaghistani.pdf">
                 <img src="./img/logo_watermark.png" alt="khatab logo" width="104" height="142">
               </a> -->
             </div>
@@ -320,9 +321,9 @@
               
               <ul class="social-links mt-2">
                   <li><a href="https://www.facebook.com/khatab.omaraldaghistani" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google"></a></li>
+                  <li><a href="https://github.com/khatab79?tab=repositories" class="fa fa-github"></a></li>
+				  <li><a href="#" class="fa fa-google"></a></li>
                   <li><a href="#" class="fa fa-skype"></a></li>
-                  <li><a href="#" class="fa fa-github"></a></li>
                   <li><a href="#" class="fa fa-linkedin"></a></li>
               </ul>
               <!-- <h3 class="my-4 pt-4 pt-lg-0">Contact me</h3> -->
@@ -365,7 +366,7 @@
    
     } else {
       mybutton.style.display = "none";
-       mynavbar.style.backgroundColor = "transparent"; 
+      mynavbar.style.backgroundColor = "transparent"; 
     }
   }
   
@@ -383,3 +384,7 @@
 <script src="./js/script.js"></script>
 <script src="./js/animate1.js"></script>
 <script src="./js/animate2.js"></script>
+
+<script>
+  includeHTML();
+  </script>
